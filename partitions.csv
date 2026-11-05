@@ -1,0 +1,6 @@
+# Nombre,   Tipo, SubTipo,  Offset,   Tamanio,   Flags
+# Sin OTA: app grande (1.63 MB) + LittleFS (2.31 MB) para los audios
+# .bop de voz en data/v/{es,en}/ (2 idiomas, Opus 8 kbps).
+nvs,        data, nvs,      0x9000,   0x5000,
+app0,       app,  factory,  0x10000,  0x1A0000,
+spiffs,     data, spiffs,   0x1B0000, 0x250000,
