@@ -1,0 +1,16 @@
+# Solo lo que necesita el firmware: fuera ejemplos/demos y artefactos de build.
+# TFT_eSPI/examples son 28 MB de demos que no se compilan.
+
+TFT_eSPI/examples/
+HRT_KEYPAD/examples/
+HRT_TFT/examples/
+
+.pio/
+.pioenvs/
+*.pio
+build/
+__pycache__/
+*.pyc
+Thumbs.db
+desktop.ini
+.DS_Store

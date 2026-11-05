@@ -14,7 +14,7 @@ que la UI, el teclado, la voz y el BLE se comportan igual.
 
 1. **Pinout final** — `include/pinout.h` idéntico al firmware real
    (TFT ILI9341, teclado 4×4, I2S MAX98357A, LEDs).
-2. **Display y teclado** — vía HRT-libs (submódulo `HRT-libs/`):
+2. **Display y teclado** — vía HRT-libs (carpeta `HRT-libs/` del repo):
    HRT_TFT + HRT_KEYPAD, con el fix del fantasma de '1' incluido.
 3. **Voz** — 124 frases × 2 idiomas convertidas a **Opus ~8 kbps**
    (16 kHz mono, frames de 20 ms) en el contenedor `.bop` (ver abajo),
@@ -32,13 +32,11 @@ que la UI, el teclado, la voz y el BLE se comportan igual.
 
 ## Compilar y flashear
 
-Las librerías viven en el submódulo `HRT-libs/` (repo `Zentyon/hrt-libs`), así
-que hay que clonar con submódulos:
+Las librerías están **incluidas en el repo** (`HRT-libs/`: HRT_KEYPAD, HRT_TFT y
+TFT_eSPI con el `User_Setup.h` de la PCB), así que un clon normal basta:
 
 ```bash
-git clone --recursive https://github.com/Zentyon/hrt-sim.git
-# si ya está clonado sin --recursive:
-git submodule update --init --recursive
+git clone https://github.com/Zentyon/hrt-sim.git
 ```
 
 ```bash
