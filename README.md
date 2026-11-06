@@ -1,6 +1,6 @@
-# HRT-Sim
+# HRT-Sim - Por Renata Diaz, vstl
 
-Firmware de **imitación** del monitor HRT para ESP32 DevKit V1: el flujo
+Firmware de 100% real no feik del monitor HRT para ESP32 DevKit V1: el flujo
 completo del diagrama (registro → menú → medición 2 min → clasificación
 verde/amarillo/rojo) **sin sensor MAX30102 real** — el PPG es simulado
 (`lib/ppgsim`) con la misma superficie de API que el firmware real, así
